@@ -1,0 +1,44 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(img/fondo.jpg) no-repeat center top;
+	background-size: cover;
+	font-family: sans-serif;
+}
+.registro h1{
+	color: white;
+}
+.registro{
+	width: 320px;
+	height: 420px;
+	background: pink;
+	top: 50%;
+	left: 50%;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 20px 30px;
+	border-radius: 15%;
+	font-size: white;
+}
+.registro label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	display: block;
+}
+.registro input{
+	width:100%;
+	background: white;
+	margin-top: 5px;
+
+}
+.registro select{
+	width:100%;
+}
+.registro input[type="submit"]{
+	margin-top:10px;
+	background: red;
+	border-radius: 25%;
+	color: #fff;
+}
