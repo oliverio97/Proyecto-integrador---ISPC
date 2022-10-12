@@ -1,0 +1,30 @@
+.contenedor {
+    background: rgb(226, 245, 244);
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.box2 {
+    float: left;
+    padding: 10px;
+    color: rgb(6, 103, 129);
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    background: rgb(202, 236, 236);
+}
+
+header {
+    background: rgb(213, 236, 236);
+}
+
+.img_curso {
+    width: 2em;
+    height: 2em;
+}
+
+nav{
+    float: right;
+    margin-bottom: 2em;
+}
