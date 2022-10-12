@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros </title>
+</head>
+<body style="background-color:beige">
+    <h1> 
+        ¿Quienes Somos?
+    </h1>
+
+    <p>
+     Buscamos ofrecer una solución innovadora a través de la web que permita conectar a usuarios y  psicólogos profesionales matriculados.
+    <br/>
+     El mismo consta de un sistema de información web (aplicación web) con datos de profesionales y que consiste en facilitar el acceso por parte 
+    <br>
+     de los usuarios a la busqueda de un psicologo profesional cercano a su domicilio y/o de acuerdo su ubicacion geografica , el acceso a diferentes especialidades, 
+    <br/> 
+     la posibilidad de contactarse con los mismos y conocer la disponibilidad que tienen.
+     <br>
+     En nuestra plataforma web ademas se ofrece la posibilidad de agendar y revisar turnos así como acceder a la agenda del profesional.
+
+    </p>
+
+    <br/>
+    <hr/>
+    <h2>
+        Objetivos
+    </h2>
+
+    <p>
+
+    <ul>
+        <li>Facilitar a las personas la contratación de los servicios de un PSM centralizando la oferta en esta área mediante una aplicación web.</li>
+        <br/>
+        <li>Brindar un servicio rápido y eficiente a través de una plataforma web que conecte a usuarios y psicólogos para agilizar la busqueda, el contacto  asi como la obtención de turnos, la disponibilidad </li>
+        <br/>
+        y la ubicación mas cercana de su domicilio de un PSM.
+        <br/> <br/>
+        <li>Asegurar el acceso, la disponibilidad y la seguridad  a través de una plataforma web confiable de un PSM las 24 hs. del día y los 365 días del año. </li>
+    
+    </ul>
+
+    </p>
+
+    
+    
+</body>
+</html>
