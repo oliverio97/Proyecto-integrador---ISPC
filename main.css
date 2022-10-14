@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+#menu li > a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carrousel-inner {
+    max-height: 39rem;
+}
+
+/* ======= media queries pantalla SM */
+
+@media (max-width:768px) {
+    #buscador {
+        width: 90% !important;
+
+    }
+}
+
+@media (max-width:768px) {
+    #intro {
+        width: 90% !important;
+
+    }
+}
+
+@media (max-width:768px) {
+    #buscadorprovincia {
+        width: 90% !important;
+
+    }
+}
