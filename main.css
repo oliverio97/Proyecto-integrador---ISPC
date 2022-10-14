@@ -5,6 +5,14 @@ body {
     overflow-x: hidden;
     
 }
+/* esto es una prueba, quiero ver si queda bien con algun color el menu */
+#menu {
+    background-color: #F5CBA7 !important;
+
+}
+
+
+
 
 #menu li > a {
     font-size: 15px;
