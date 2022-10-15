@@ -34,11 +34,10 @@ class Género(Model):
     class Meta:
         database = db
 
-class Charlas_talleres(Model):
+class Cursos(Model):
     Costo = IntegerField
     Fecha_inicio = DateField()
     Fecha_finalización = DateField()
-    Lugar = CharField(100)
     Fecha_inserción= DateTimeField (default=datetime.datetime.now()) 
     Fecha_actualización = DateTimeField()
     Estado = CharField (default="A")
@@ -79,12 +78,12 @@ class Clientes(Model):
             edad -= 1
         return edad
 
-class Clientes_charlas_talleres(Model):
+class Clientes_cursos(Model):
     Fecha_inserción= DateTimeField (default=datetime.datetime.now()) 
     Fecha_actualización = DateTimeField()
     Estado = CharField (default="A")
     Clientes_dni = ForeignKeyField(Clientes, backref="Clientes_DNI")
-    Charlas_talleres_id = ForeignKeyField(Charlas_talleres, backref="Charlas_talleres_id")
+    Charlas_talleres_id = ForeignKeyField(Cursos, backref="Charlas_talleres_id")
 
     class Meta:
         database = db
@@ -96,6 +95,15 @@ class Libros_Clientes(Model):
     Libros_id = ForeignKeyField(Libros, backref="Libros_id")
     Clientes_dni = ForeignKeyField(Clientes,backref="Clientes_dni")
     
+    class Meta:
+        database = db
+
+class Orientación(Model):
+    Nombre = CharField(40)
+    Fecha_inserción= DateTimeField (default=datetime.datetime.now()) 
+    Fecha_actualización = DateTimeField()
+    Estado = CharField (default="A")
+
     class Meta:
         database = db
 
@@ -144,6 +152,7 @@ class Psicólogos(Model):
     Género = ForeignKeyField(Género, backref="Género_psicólogos")
     Modalidad = ForeignKeyField(Modalidad, backref="Modalidad_psicólogos")
     Especialidad = ForeignKeyField(Especialidad, backref="Especialidad_psicólogos")
+    Orientación = ForeignKeyField(Orientación, backref="Psicólogos_orientación")
     
     class Meta:
         database = db
@@ -181,5 +190,5 @@ class Clientes_psicólogos(Model):
 
 db.connect() #conexión a la base de datos
 
-db.create_tables([Ubicación,Libros,Libros_Clientes,Charlas_talleres,Clientes_charlas_talleres,
+db.create_tables([Ubicación,Libros,Libros_Clientes,Cursos,Clientes_cursos, Orientación,
 Clientes,Psicólogos,Psicólogos_obrasocial,Obra_social,Modalidad,Especialidad,Género,Clientes_psicólogos]) #creación de las tablas
