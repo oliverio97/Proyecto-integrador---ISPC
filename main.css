@@ -6,11 +6,14 @@ body {
 /* esto es una prueba, quiero ver si queda bien con algun color el menu */
 
 #menu {
-    background-color: #F5CBA7 !important;
+    background-color: #A7F5EB !important;
 
 }
 
-
+#formulario {
+    margin-left: 10em;
+    margin-right: 10em;
+}
 
  
 
