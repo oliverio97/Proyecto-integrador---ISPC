@@ -2,10 +2,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-    
 }
 /* esto es una prueba, quiero ver si queda bien con algun color el menu */
+
 #menu {
     background-color: #F5CBA7 !important;
 
@@ -13,6 +12,7 @@ body {
 
 
 
+ 
 
 #menu li > a {
     font-size: 15px;
@@ -28,6 +28,32 @@ body {
 .carrousel-inner {
     max-height: 39rem;
 }
+
+/* ======= prueba CSS con lo de maxi*/
+
+.contenedor {
+    background: rgb(226, 245, 244);
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.box2 {
+    float: left;
+    padding: 10px;
+    color: rgb(6, 103, 129);
+    width: 270px;
+    height: 300px;
+    margin: 20px;
+    background: rgb(202, 236, 236);
+}
+
+
+.img_curso {
+    width: 2em;
+    height: 2em;
+}
+
 
 /* ======= media queries pantalla SM */
 
@@ -51,3 +77,5 @@ body {
 
     }
 }
+
+
