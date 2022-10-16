@@ -29,7 +29,7 @@ body {
 }
 
 .carrousel-inner {
-    max-height: 39rem;
+    max-height: 10rem;
 }
 
 /* ======= prueba CSS con lo de maxi*/
@@ -39,6 +39,11 @@ body {
     padding: 10px;
     overflow: hidden;
     margin-top: 2em;
+}
+
+.contenedor_box {
+    margin-left: 12em;
+    margin-right: 12em;
 }
 
 .box2 {
@@ -59,8 +64,7 @@ body {
 
 footer {
     background: #1b2a4e;
-    min-height: 100px;
-    margin-top: 100px;
+    height: auto;
 
 }
 
@@ -76,6 +80,7 @@ footer p {
 }
 
 /* ======= media queries pantalla SM */
+
 
 @media (max-width:768px) {
     #buscador {
