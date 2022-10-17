@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registro de Usuario</title>
@@ -9,9 +9,11 @@
      rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
      <link rel="stylesheet"  href="main.css">
-  </head>
+</head>
 
 <body>
+
+	<!-- ENCABEZADO -->
 
 	<header>
       
@@ -58,67 +60,67 @@
   
 	</header>
   
-	
-	<div class=" justify-content-center aling-items-center d-flex my-5" id="formulario">
-	
+	<!-- FORMULARIO -->
+
+	<section>
+		<div class=" justify-content-center aling-items-center d-flex my-5" id="formulario">
+			<form class="form-group form-control">
+				<div class="text-secondary">
+					<div class="text-center">Psico Finder</div>
+					<div class="text-center fs-1 fw-bold">Formulario de Registro</div>
+				</div> 
+				
+				<div>
+					<div class="input-group col-xs-12 col-md-3">
+						<input class="form-control form-control-sm mt-2" type="number" placeholder="DNI">					
+						<input class="form-control form-control-sm mt-2" placeholder="Nombre">
+					</div>
+				</div>
+				
+				<div>
+					<div class="input-group col-xs-12 col-md-3">
+						<input class="form-control form-control-sm mt-2" placeholder="Apellido">
+						<input class="form-control form-control-sm mt-2" type="email" placeholder="Email">
+					</div>
+				</div>
+				<div>
+					<div class="input-group col-xs-12 col-md-3">
+						<input class="form-control form-control-sm mt-2" placeholder="Contraseña">
+						<input class="form-control form-control-sm mt-2" placeholder="Fecha de nacimiento">
+						<input class="form-control form-control-sm mt-2" type="number" placeholder="Telefono">
+					</div>
+				</div>
+				<div>
+					<div class="input-group col-xs-12 col-md-3">
+						<input class="form-control form-control-sm mt-2" placeholder="Dirección">
+						<input class="form-control form-control-sm mt-2" placeholder="Ciudad">
+					</div>
+				</div>
+				<div>
+					<div class="input-group col-xs-12 col-md-3">
+						<input class="form-control form-control-sm mt-2"  type="number" placeholder="Matrícula (si posee)">
+					
+						<input class="form-control form-control-sm mt-2" placeholder="Provincia">
+					
+						<select class="form-select form-select-sm text-secondary mt-2" >
+							<option>Cliente</option>
+							<option>Profesional</option>
+						</select>
+					</div>
+				</div>
 		
-		<form class="form-group form-control">
-			<div class="text-secondary">
-				<div class="text-center">Psico Finder</div>
-				<div class="text-center fs-1 fw-bold">Formulario de Registro</div>
-			</div> 
-			
-			<div>
-				<div class="input-group col-xs-12 col-md-3">
-					<input class="form-control form-control-sm mt-2" type="number" placeholder="DNI">
+				<div class="d-flex justify-content-center">
+					<div class="col-12 mt-2 d-flex justify-content-center">
+						<button type="submit" class= "btn btn-info text-white">Regístrate</button>
+					</div>
+				</div>
 				
-					<input class="form-control form-control-sm mt-2" placeholder="Nombre">
-				</div>
-			</div>
-			
-			<div>
-				<div class="input-group col-xs-12 col-md-3">
-					<input class="form-control form-control-sm mt-2" placeholder="Apellido">
-					<input class="form-control form-control-sm mt-2" type="email" placeholder="Email">
-				</div>
-			</div>
-			<div>
-				<div class="input-group col-xs-12 col-md-3">
-					<input class="form-control form-control-sm mt-2" placeholder="Contraseña">
-					<input class="form-control form-control-sm mt-2" placeholder="Fecha de nacimiento">
-					<input class="form-control form-control-sm mt-2" type="number" placeholder="Telefono">
-				</div>
-			</div>
-			<div>
-				<div class="input-group col-xs-12 col-md-3">
-					<input class="form-control form-control-sm mt-2" placeholder="Dirección">
-					<input class="form-control form-control-sm mt-2" placeholder="Ciudad">
-				</div>
-			</div>
-			<div>
-				<div class="input-group col-xs-12 col-md-3">
-					<input class="form-control form-control-sm mt-2"  type="number" placeholder="Matrícula (si posee)">
-				
-					<input class="form-control form-control-sm mt-2" placeholder="Provincia">
-				
-					<select class="form-select form-select-sm text-secondary mt-2" >
-						<option>Cliente</option>
-						<option>Profesional</option>
-					</select>
-				</div>
-			</div>
+			</form>
+		</div>
+		
+	</section>
 
-			<div class="d-flex justify-content-center">
-				<div class="col-12 mt-2 d-flex justify-content-center">
-					<button type="submit" class= "btn btn-info text-white">Regístrate</button>
-				</div>
-			</div>
-			
-		</form>
-	</div>
-	
-
-	<!--Pie de Pagina -->
+	<!--PIE DE PÁGINA -->
 
 	<footer class=" mt-5 w-100 d-flex aling-items-center justify-content-center flex-wrap">
 		<p class="fs-4 px-3 pt-3">Psico Finder. &copy; Todos los derechos Reservados 2022</p>
