@@ -72,6 +72,19 @@ footer p {
     color: #f3f3f3;
 }
 
+.card-img-top {
+    width: 15rem;
+    height: 18rem;
+    justify-content: center;
+}
+
+
+#buscadores {
+    border-radius: 5%;
+    border: solid 1px black;
+    background-color: #f3f3f3;
+}
+
 /* ======= media queries pantalla SM */
 
 
@@ -89,11 +102,5 @@ footer p {
     }
 }
 
-@media (max-width:768px) {
-    #buscadorprovincia {
-        width: 90% !important;
-
-    }
-}
 
 
