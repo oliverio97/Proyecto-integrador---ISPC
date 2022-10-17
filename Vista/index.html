@@ -74,54 +74,66 @@
       <article class="w-50 mx-auto text-center pt-5" id="intro" >
         <h1 class="p-3 fs-2 border-top border-3">En este sitio vas a poder encontrar tu próximo <span class="text-primary"> Profesional de la salud mental</span></h1>
         <p class="p-3 fs-4"><span class="text-primary">Psico Finder</span> es un buscador online para que encuentres psicólogos en toda la Argentina. Podes 
-        filtrar tu búsqueda por zona, orientación y/o especialidad</p>
+        filtrar tu búsqueda por provincia, orientación, especialidad y/o tipo de modalidad</p>
       
       </article>
     
 
    <!--BUSCADORES -->
       
-      <article class="w-50 mx-auto text-center pt-5" id="buscadornombre">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="ej. Martin Gonzalez, o terapia de parejas" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+      <article>
+        <div class="w-50 mx-auto text-center pt-5" id="buscadores"> 
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="ej. Martin Gonzalez, o terapia de parejas" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Buscá por provincia"aria-label="Text input with dropdown button">
+                <button class="btn btn-outline-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">Buscar</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Buenos Aires</a></li>
+                  <li><a class="dropdown-item" href="#">CABA</a></li>
+                  <li><a class="dropdown-item" href="#">Cordoba</a></li>
+                  <li><a class="dropdown-item" href="#">Santa Fe</a></li>
+                  <li><a class="dropdown-item" href="#">Mendoza</a></li>
+                  <li><a class="dropdown-item" href="#">Tucuman</a></li>
+                  <li><a class="dropdown-item" href="#">Entre Rios</a></li>
+                  <li><a class="dropdown-item" href="#">Salta</a></li>
+                  <li><a class="dropdown-item" href="#">Misiones</a></li>
+                  <li><a class="dropdown-item" href="#">Chaco</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                  <li><a class="dropdown-item" href="#">Santiago Del Estero</a></li>
+                  <li><a class="dropdown-item" href="#">San Juan</a></li>
+                  <li><a class="dropdown-item" href="#">Jujuy</a></li>
+                  <li><a class="dropdown-item" href="#">Rio Negro</a></li>
+                  <li><a class="dropdown-item" href="#">Neuquén</a></li>
+                  <li><a class="dropdown-item" href="#">Formosa</a></li>
+                  <li><a class="dropdown-item" href="#">Chubut</a></li>
+                  <li><a class="dropdown-item" href="#">San Luis</a></li>
+                  <li><a class="dropdown-item" href="#">Catamarca</a></li>
+                  <li><a class="dropdown-item" href="#">La Rioja</a></li>
+                  <li><a class="dropdown-item" href="#">La Pampa</a></li>
+                  <li><a class="dropdown-item" href="#">Santa cruz</a></li>
+                  <li><a class="dropdown-item" href="#">Tierra Del Fuego</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>            
         </div>
+          
+       
+          
           
       </article> 
 
     
 
       <article class="w-50 mx-auto text-center pt-5" id="buscadorprovincia">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Buscá por provincia"aria-label="Text input with dropdown button">
-          <button class="btn btn-outline-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">Buscar</button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Buenos Aires</a></li>
-            <li><a class="dropdown-item" href="#">CABA</a></li>
-            <li><a class="dropdown-item" href="#">Cordoba</a></li>
-            <li><a class="dropdown-item" href="#">Santa Fe</a></li>
-            <li><a class="dropdown-item" href="#">Mendoza</a></li>
-            <li><a class="dropdown-item" href="#">Tucuman</a></li>
-            <li><a class="dropdown-item" href="#">Entre Rios</a></li>
-            <li><a class="dropdown-item" href="#">Salta</a></li>
-            <li><a class="dropdown-item" href="#">Misiones</a></li>
-            <li><a class="dropdown-item" href="#">Chaco</a></li>
-            <li><a class="dropdown-item" href="#">Corrientes</a></li>
-            <li><a class="dropdown-item" href="#">Santiago Del Estero</a></li>
-            <li><a class="dropdown-item" href="#">San Juan</a></li>
-            <li><a class="dropdown-item" href="#">Jujuy</a></li>
-            <li><a class="dropdown-item" href="#">Rio Negro</a></li>
-            <li><a class="dropdown-item" href="#">Neuquén</a></li>
-            <li><a class="dropdown-item" href="#">Formosa</a></li>
-            <li><a class="dropdown-item" href="#">Chubut</a></li>
-            <li><a class="dropdown-item" href="#">San Luis</a></li>
-            <li><a class="dropdown-item" href="#">Catamarca</a></li>
-            <li><a class="dropdown-item" href="#">La Rioja</a></li>
-            <li><a class="dropdown-item" href="#">La Pampa</a></li>
-            <li><a class="dropdown-item" href="#">Santa cruz</a></li>
-            <li><a class="dropdown-item" href="#">Tierra Del Fuego</a></li>
-          </ul>
-        </div>
+        
       </article>
         <article class="w-50 mx-auto text-center pt-5" id="buscadororientacion">
           <div class="input-group mb-3">
@@ -130,6 +142,8 @@
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="#">Psicoanálisis</a></li>
               <li><a class="dropdown-item" href="#">Terapia Cognitiva Conductual</a></li>
+              <li><a class="dropdown-item" href="#">Gestalt</a></li>
+              
               
               
             
