@@ -34,27 +34,21 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Registrarme
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Registro_Paciente.html">Como paciente</a></li>
-                  <li><a class="dropdown-item" href="Registro_Profesional.html">Como profesional</a></li>					 
-                </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="Registro.html">Registrarme</a>
                 </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="Libros.html">Libros</a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="Cursos.html">Cursos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Quienes_somos.html">Quiénes Somos</a>
-              </li>
-            </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="Cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Quienes somos.html">Quiénes Somos</a>
+                </li>
+              </ul>
 
             <form class="d-flex" role="search" style="max-height: 200px">
               <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
@@ -74,248 +68,124 @@
       <article class="w-50 mx-auto text-center pt-5" id="intro" >
         <h1 class="p-3 fs-2 border-top border-3">En este sitio vas a poder encontrar tu próximo <span class="text-primary"> Profesional de la salud mental</span></h1>
         <p class="p-3 fs-4"><span class="text-primary">Psico Finder</span> es un buscador online para que encuentres psicólogos en toda la Argentina. Podes 
-        filtrar tu búsqueda por zona, orientación y/o especialidad</p>
+        filtrar tu búsqueda por provincia, orientación, especialidad y/o tipo de modalidad</p>
       
       </article>
       
     </section>
 
-    <!--BUSCADORES -->
-        
-    <article class="w-50 mx-auto text-center pt-5" id="buscadornombre">
-      <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="ej. Martin Gonzalez, o terapia de parejas" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
-      </div>
-        
-    </article> 
+   <!--BUSCADOR PRINCIPAL -->
       
-
-    <article class="w-50 mx-auto text-center pt-5" id="buscadorprovincia">
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Buscá por provincia"aria-label="Text input with dropdown button">
-        <button class="btn btn-outline-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">Buscar</button>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Buenos Aires</a></li>
-          <li><a class="dropdown-item" href="#">CABA</a></li>
-          <li><a class="dropdown-item" href="#">Cordoba</a></li>
-          <li><a class="dropdown-item" href="#">Santa Fe</a></li>
-          <li><a class="dropdown-item" href="#">Mendoza</a></li>
-          <li><a class="dropdown-item" href="#">Tucuman</a></li>
-          <li><a class="dropdown-item" href="#">Entre Rios</a></li>
-          <li><a class="dropdown-item" href="#">Salta</a></li>
-          <li><a class="dropdown-item" href="#">Misiones</a></li>
-          <li><a class="dropdown-item" href="#">Chaco</a></li>
-          <li><a class="dropdown-item" href="#">Corrientes</a></li>
-          <li><a class="dropdown-item" href="#">Santiago Del Estero</a></li>
-          <li><a class="dropdown-item" href="#">San Juan</a></li>
-          <li><a class="dropdown-item" href="#">Jujuy</a></li>
-          <li><a class="dropdown-item" href="#">Rio Negro</a></li>
-          <li><a class="dropdown-item" href="#">Neuquén</a></li>
-          <li><a class="dropdown-item" href="#">Formosa</a></li>
-          <li><a class="dropdown-item" href="#">Chubut</a></li>
-          <li><a class="dropdown-item" href="#">San Luis</a></li>
-          <li><a class="dropdown-item" href="#">Catamarca</a></li>
-          <li><a class="dropdown-item" href="#">La Rioja</a></li>
-          <li><a class="dropdown-item" href="#">La Pampa</a></li>
-          <li><a class="dropdown-item" href="#">Santa cruz</a></li>
-          <li><a class="dropdown-item" href="#">Tierra Del Fuego</a></li>
-        </ul>
-      </div>
-    </article>
-
-
-    <article class="w-50 mx-auto text-center pt-5" id="buscadororientacion">
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Buscá por orientación"aria-label="Text input with dropdown button">
-        <button class="btn btn-outline-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">Buscar</button>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Psicoanálisis</a></li>
-          <li><a class="dropdown-item" href="#">Terapia Cognitiva Conductual</a></li>
+      <article class="w-50 mx-auto text-center pt-5" id="buscador">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="ej. Martin Gonzalez, o terapia de parejas" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+        </div>
           
-          
-        
-        </ul>
-      </div>
-    
+      </article> 
 
-    </article>
+    <!--BUSCADOR POR PROVINCIA -->
 
-
-    <article class="w-50 mx-auto text-center pt-5" id="buscadorespecialidad">
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Buscá por especialidad"aria-label="Text input with dropdown button">
-        <button class="btn btn-outline-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">Buscar</button>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Niños</a></li>
-          <li><a class="dropdown-item" href="#">Adultos</a></li>
-          <li><a class="dropdown-item" href="#">Adolescentes</a></li>
-          <li><a class="dropdown-item" href="#">Adultos Mayores</a></li>
-          
-        
-        </ul>
-      </div>
-    </article>
-
-
-    <article class="w-50 mx-auto text-center pt-5" id="modalidadatencion">
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Buscá por modalidad de atención"aria-label="Text input with dropdown button">
-        <button class="btn btn-outline-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">Buscar</button>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Buenos Aires</a></li>
-          <li><a class="dropdown-item" href="#">CABA</a></li>
-          <li><a class="dropdown-item" href="#">Cordoba</a></li>              
-        
-        </ul>
-      </div>
-    </article>
-
-        
-
-      
-    <!--TARJETAS PSICÓLOGOS con funcionalidad card de Bootstrap -->
-
-    <section>
-      <div class="container-fluid">
-        <div id="columna" class="row">
-          <div class="col-lg-3 align-items-center">
-            <div class="card border-info mb-3" style="width: 18rem;">
-              <img src="Assets/Usuario.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Psicólogo</h5>
-                <p class="card-text">Aquí va una breve descripcion del perfil profesional del psicologo</p>
-                <a href="Detalles_Psicólogo.html" class="btn btn-primary">Acceder</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 align-items-center">
-            <div class="card border-info mb-3" style="width: 18rem;">
-              <img src="Assets/Usuario.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Psicólogo</h5>
-                <p class="card-text">Aquí va una breve descripcion del perfil profesional del psicologo</p>
-                <a href="Detalles_Psicólogo.html" class="btn btn-primary">Acceder</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 align-items-center">
-            <div class="card border-info mb-3" style="width: 18rem;">
-              <img src="Assets/Usuario.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Psicólogo</h5>
-                <p class="card-text">Aquí va una breve descripcion del perfil profesional del psicologo</p>
-                <a href="Detalles_Psicólogo.html" class="btn btn-primary">Acceder</a>
-              </div>
-            </div>
-          </div> 
+      <article class="w-50 mx-auto text-center pt-5" id="buscadorprovincia">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Buscá por provincia"aria-label="Text input with dropdown button">
+          <button class="btn btn-outline-secondary dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">Buscar</button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Buenos Aires</a></li>
+            <li><a class="dropdown-item" href="#">CABA</a></li>
+            <li><a class="dropdown-item" href="#">Cordoba</a></li>
+            <li><a class="dropdown-item" href="#">Santa Fe</a></li>
+            <li><a class="dropdown-item" href="#">Mendoza</a></li>
+            <li><a class="dropdown-item" href="#">Tucuman</a></li>
+            <li><a class="dropdown-item" href="#">Entre Rios</a></li>
+            <li><a class="dropdown-item" href="#">Salta</a></li>
+            <li><a class="dropdown-item" href="#">Misiones</a></li>
+            <li><a class="dropdown-item" href="#">Chaco</a></li>
+            <li><a class="dropdown-item" href="#">Corrientes</a></li>
+            <li><a class="dropdown-item" href="#">Santiago Del Estero</a></li>
+            <li><a class="dropdown-item" href="#">San Juan</a></li>
+            <li><a class="dropdown-item" href="#">Jujuy</a></li>
+            <li><a class="dropdown-item" href="#">Rio Negro</a></li>
+            <li><a class="dropdown-item" href="#">Neuquén</a></li>
+            <li><a class="dropdown-item" href="#">Formosa</a></li>
+            <li><a class="dropdown-item" href="#">Chubut</a></li>
+            <li><a class="dropdown-item" href="#">San Luis</a></li>
+            <li><a class="dropdown-item" href="#">Catamarca</a></li>
+            <li><a class="dropdown-item" href="#">La Rioja</a></li>
+            <li><a class="dropdown-item" href="#">La Pampa</a></li>
+            <li><a class="dropdown-item" href="#">Santa cruz</a></li>
+            <li><a class="dropdown-item" href="#">Tierra Del Fuego</a></li>
+          </ul>
         </div>
 
-        <div id="columna2" class="row">
-          <div class="col-lg-4 align-items-center">
-            <div class="card border-info mb-3" style="width: 18rem;">
-              <img src="Assets/Usuario.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Psicólogo</h5>
-                <p class="card-text">Aquí va una breve descripcion del perfil profesional del psicologo</p>
-                <a href="Detalles_Psicólogo.html" class="btn btn-primary">Acceder</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 align-items-center">
-            <div class="card border-info mb-3" style="width: 18rem;">
-              <img src="Assets/Usuario.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Psicólogo</h5>
-                <p class="card-text">Aquí va una breve descripcion del perfil profesional del psicologo</p>
-                <a href="Detalles_Psicólogo.html" class="btn btn-primary">Acceder</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 align-items-center">
-            <div class="card border-info mb-3" style="width: 18rem;">
-              <img src="Assets/Usuario.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Psicólogo</h5>
-                <p class="card-text">Aquí va una breve descripcion del perfil profesional del psicologo</p>
-                <a href="detalles_psicólogo.html" class="btn btn-primary">Acceder</a>
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div>
+      </article>
 
 
-    </section>
-
-
-      
-
-    <!--TARJETAS PSICÓLOGOS - Para reemplazar por las cards de Bootstrap
+    <!--TARJETAS PSICÓLOGOS -->
 
     <article>
 
-      <div class="contenedor d-flex justify-content-center">
-      
-        <div class="box2">
+        <div class="contenedor d-flex justify-content-center">
+        
+          <div class="box2">
+              <div class="img_psicólogo">
+                  <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
+              </div>
+              <h1 class="fs-4 mt-2">Psicólogo</h1>
+              <p>Aquí va la descripcion</p>
+              <a href="DetallesPsicólogo.html"><strong>Acceder</strong></a>
+          </div>
+        
+          <div class="box2">
             <div class="img_psicólogo">
                 <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
             </div>
             <h1 class="fs-4 mt-2">Psicólogo</h1>
             <p>Aquí va la descripcion</p>
-            <a href="Detalles_Psicólogo.html"><strong>Acceder</strong></a>
-        </div>
-      
-        <div class="box2">
-          <div class="img_psicólogo">
-              <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
+            <a href="DetallesPsicólogo.html"><strong>Acceder</strong></a>
           </div>
-          <h1 class="fs-4 mt-2">Psicólogo</h1>
-          <p>Aquí va la descripcion</p>
-          <a href="Detalles_Psicólogo.html"><strong>Acceder</strong></a>
-        </div>
-      
-        <div class="box2">
-          <div class="img_psicólogo">
-              <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
-          </div>
-          <h1 class="fs-4 mt-2">Psicólogo</h1>
-          <p>Aquí va la descripcion</p>
-          <a href="Detalles_Psicólogo.html"><strong>Acceder</strong></a>
-        </div>
-      </div>
-
-      <div class="contenedor d-flex justify-content-center">
-    
-        <div class="box2">
-          <div class="img_psicólogo">
-              <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
-          </div>
-          <h1 class="fs-4 mt-2">Psicólogo</h1>
-          <p>Aquí va la descripcion</p>
-          <a href="Detalles_Psicólogo.html"><strong>Acceder</strong></a>
-        </div>
-
-        <div class="box2">
-          <div class="img_psicólogo">
-              <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
-          </div>
-          <h1 class="fs-4 mt-2">Psicólogo</h1>
-          <p>Aquí va la descripcion</p>
-          <a href="Detalles_Psicólogo.html"><strong>Acceder</strong></a>
-        </div>
-
-        <div class="box2">
-          <div class="img_psicólogo">
+        
+          <div class="box2">
+            <div class="img_psicólogo">
                 <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
-          </div>
+            </div>
             <h1 class="fs-4 mt-2">Psicólogo</h1>
             <p>Aquí va la descripcion</p>
-            <a href="Detalles_Psicólogo.html"><strong>Acceder</strong></a>
+            <a href="DetallesPsicólogo.html"><strong>Acceder</strong></a>
+          </div>
         </div>
 
-      </div> 
-    </article>     
+        <div class="contenedor d-flex justify-content-center">
+      
+          <div class="box2">
+            <div class="img_psicólogo">
+                <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
+            </div>
+            <h1 class="fs-4 mt-2">Psicólogo</h1>
+            <p>Aquí va la descripcion</p>
+            <a href="DetallesPsicólogo.html"><strong>Acceder</strong></a>
+          </div>
+    
+          <div class="box2">
+            <div class="img_psicólogo">
+                <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
+            </div>
+            <h1 class="fs-4 mt-2">Psicólogo</h1>
+            <p>Aquí va la descripcion</p>
+            <a href="DetallesPsicólogo.html"><strong>Acceder</strong></a>
+          </div>
+    
+          <div class="box2">
+            <div class="img_psicólogo">
+                  <img src="Assets/Usuario.png" alt="Imagen de psicologia" width="250em" height="150em" />
+            </div>
+              <h1 class="fs-4 mt-2">Psicólogo</h1>
+              <p>Aquí va la descripcion</p>
+              <a href="DetallesPsicólogo.html"><strong>Acceder</strong></a>
+          </div>
+    
+        </div> 
+      </article>     
 
         
     --> 

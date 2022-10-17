@@ -76,7 +76,7 @@ footer p {
 
 
 @media (max-width:768px) {
-    #buscador {
+    #buscadores {
         width: 90% !important;
 
     }
@@ -84,6 +84,13 @@ footer p {
 
 @media (max-width:768px) {
     #intro {
+        width: 90% !important;
+
+    }
+}
+
+@media (max-width:768px) {
+    #buscadorprovincia {
         width: 90% !important;
 
     }
