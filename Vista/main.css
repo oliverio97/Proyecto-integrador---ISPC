@@ -71,6 +71,11 @@ footer p {
     padding: 0 20px;
     color: #f3f3f3;
 }
+#buscadores {
+    border-radius: 5%;
+    border: solid 1px black;
+    background-color: #f3f3f3;
+}
 
 /* ======= media queries pantalla SM */
 
