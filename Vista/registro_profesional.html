@@ -38,8 +38,8 @@
 					  Registrarme
 					</a>
 					<ul class="dropdown-menu">
-					  <li><a class="dropdown-item" href="RegistroPaciente.html">Como paciente</a></li>
-					  <li><a class="dropdown-item" href="RegistroProfesional.html">Como profesional</a></li>					 
+					  <li><a class="dropdown-item" href="Registro_Paciente.html">Como paciente</a></li>
+					  <li><a class="dropdown-item" href="Registro_Profesional.html">Como profesional</a></li>					 
 					</ul>
 				  </li>
   
@@ -51,7 +51,7 @@
 				  <a class="nav-link" href="Cursos.html">Cursos</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="Quienes somos.html">Quiénes Somos</a>
+				  <a class="nav-link" href="Quienes_somos.html">Quiénes Somos</a>
 				</li>
 			  </ul>
   
@@ -128,7 +128,25 @@
 							<input type="text" name="Contraseña" id="Contraseña" class="form-control form-control-md" placeholder="Ingrese su contraseña">
 						</div>						
 					</div>
-						
+					<div class="row">
+						<div class="col-md-3 my-1 d-flex">
+							<label class="align-self-center">Modalidad de Atención</label>				
+						</div>
+						<div class="col-md-3 my-1">
+							<select class="form-select form-select-md text-secondary" >
+								<option>Ambas</option>
+								<option>Presencial</option>
+								<option>Virtual</option>
+							</select>
+								
+						</div>
+						<div class="col-md-2 my-1 d-flex">
+							<label for="Matrícula" class="align-self-center">Matrícula</label>				
+						</div>
+						<div class="col-md-4 my-1">
+							<input type="number" name="Matrícula" id="Matrícula" class="form-control form-control-md" placeholder="Ingrese su número de matrícula">
+						</div>	
+					</div>	
 					<div class="row">
 						<div class="col-md-2 my-1 d-flex">
 							<label for="Provincia" class="align-self-center">Provincia</label>				
@@ -148,16 +166,29 @@
 							<label for="Dirección" class="align-self-center">Dirección</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="text" name="Dirección" id="Dirección" class="form-control form-control-md" placeholder="Ingrese su dirección">
+							<input type="text" name="Dirección" id="Dirección" class="form-control form-control-md" placeholder="Ingrese la dirección de su consultorio">
 						</div>
-                        <div class="col-md-2 my-1 d-flex">
+						<div class="col-md-2 my-1 d-flex">
+							<label for="Especialidad" class="align-self-center">Especialidad</label>				
+						</div>
+						<div class="col-md-4 my-1">
+							<input type="text" name="Especialidad" id="Especialidad" class="form-control form-control-md" placeholder="Ingrese su especialidad">
+						</div>						
+					</div>					
+					<div class="row">
+						<div class="col-md-2 my-1 d-flex">
+							<label for="Orientación" class="align-self-center">Orientación</label>				
+						</div>
+						<div class="col-md-4 my-1">
+							<input type="text" name="Orientación" id="Orientación" class="form-control form-control-md" placeholder="Ingrese su orientación">
+						</div>
+						<div class="col-md-2 my-1 d-flex">
 							<label for="Teléfono" class="align-self-center">Teléfono</label>				
 						</div>
 						<div class="col-md-4 my-1">
 							<input type="text" name="Teléfono" id="Teléfono" class="form-control form-control-md" placeholder="Ingrese su número de teléfono">
-						</div>	
-											
-					</div>										
+						</div>						
+					</div>					
 					<div class="row">
 						<div class="col-md-3 my-1 d-flex">
 							<label for="Fecha de Nacimiento" class="align-self-center">Fecha de Nacimiento</label>					
