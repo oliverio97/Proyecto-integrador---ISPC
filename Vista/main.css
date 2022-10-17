@@ -8,14 +8,7 @@ body {
 #menu {
     background-color: #A7F5EB !important;
 
-}
-
-#formulario {
-    margin-left: 10em;
-    margin-right: 10em;
-}
-
- 
+} 
 
 #menu li > a {
     font-size: 15px;
@@ -28,6 +21,9 @@ body {
     font-weight: bold;
 }
 
+.carrousel-inner {
+    max-height: 10rem;
+}
 
 /* ======= prueba CSS con lo de maxi*/
 
@@ -42,7 +38,6 @@ body {
     margin-left: 12em;
     margin-right: 12em;
 }
-
 
 .box2 {
     float: left;
@@ -77,10 +72,6 @@ footer p {
     color: #f3f3f3;
 }
 
-.card {
-    height: 34rem;
-}
-
 /* ======= media queries pantalla SM */
 
 
@@ -93,13 +84,6 @@ footer p {
 
 @media (max-width:768px) {
     #intro {
-        width: 90% !important;
-
-    }
-}
-
-@media (max-width:768px) {
-    #buscadorprovincia {
         width: 90% !important;
 
     }
