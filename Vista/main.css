@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/* esto es una prueba, quiero ver si queda bien con algun color el menu */
+
+#menu {
+    background-color: #A7F5EB !important;
+
+}
+
+#formulario {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+ 
+
+#menu li > a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carrousel-inner {
+    max-height: 10rem;
+}
+
+/* ======= prueba CSS con lo de maxi*/
+
+.contenedor {
+    background: rgb(226, 245, 244);
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.contenedor_box {
+    margin-left: 12em;
+    margin-right: 12em;
+}
+
+.box2 {
+    float: left;
+    padding: 10px;
+    color: rgb(6, 103, 129);
+    width: 270px;
+    height: 300px;
+    margin: 20px;
+    background: rgb(202, 236, 236);
+}
+
+
+.img_curso {
+    width: 2em;
+    height: 2em;
+}
+
+footer {
+    background: #1b2a4e;
+    height: auto;
+
+}
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 20px;
+    color: #f3f3f3;
+}
+
+/* ======= media queries pantalla SM */
+
+
+@media (max-width:768px) {
+    #buscador {
+        width: 90% !important;
+
+    }
+}
+
+@media (max-width:768px) {
+    #intro {
+        width: 90% !important;
+
+    }
+}
+
+@media (max-width:768px) {
+    #buscadorprovincia {
+        width: 90% !important;
+
+    }
+}
+
+
