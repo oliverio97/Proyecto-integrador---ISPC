@@ -28,9 +28,6 @@ body {
     font-weight: bold;
 }
 
-.carrousel-inner {
-    max-height: 10rem;
-}
 
 /* ======= prueba CSS con lo de maxi*/
 
@@ -45,6 +42,7 @@ body {
     margin-left: 12em;
     margin-right: 12em;
 }
+
 
 .box2 {
     float: left;
@@ -77,6 +75,10 @@ footer p {
     font-size: 26px;
     padding: 0 20px;
     color: #f3f3f3;
+}
+
+.card {
+    height: 34rem;
 }
 
 /* ======= media queries pantalla SM */
