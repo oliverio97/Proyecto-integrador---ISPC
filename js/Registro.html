@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de Usuario</title>
+	<link rel="icon" href="#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+     <link rel="stylesheet"  href="#">
+  </head>
+
+<body>
+
+	<header>
+      
+		<nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="#">
+			  <span class="text-primary fs-5" fw-bold>Psico Finder</span>
+		   </a>
+		   
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+				</li>
+  
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Registrarme</a>
+				</li>
+  
+				<li class="nav-item">
+				  <a class="nav-link" href="Libros.html">Libros</a>
+				</li>
+  
+				<li class="nav-item">
+				  <a class="nav-link" href="Cursos.html">Cursos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Quiénes somos.html">Quiénes Somos</a>
+				  </li>
+			  </ul>
+  
+			  <form name= "formulario" class="d-flex" role="search" style="max-height: 200px" method="post" onsubmit="return validar();">
+				<input name= "email" class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+				<input name="password" class="form-control me-2" type="password" placeholder="Contraseña" aria-label="password">
+				<button class="btn btn-primary btn-primaryoutline-success" type="submit" onclick="validar();">Iniciar sesión</button>
+			  </form>
+			</div>
+		  </div>
+		</nav>
+		
+			
+		
+	</header>
+  
+	
+	<div class=" justify-content-center aling-items-center d-flex my-5" id="formular">
+	
+		
+		<form name = "formRegis" class="form-group form-control" method="post" onsubmit="return validarRegistro();">
+			<div class="text-secondary">
+				<div class="text-center">Psico Finder</div>
+				<div class="text-center fs-1 fw-bold">Formulario de Registro</div>
+			</div> 
+			
+			<div>
+				<div class="input-group col-xs-12 col-md-3">
+					<input name = "dni" class="form-control form-control-sm mt-2"  placeholder="DNI">
+				
+					<input name = "nombre"class="form-control form-control-sm mt-2" placeholder="Nombre">
+				</div>
+			</div>
+			
+			<div>
+				<div class="input-group col-xs-12 col-md-3">
+					<input name = "apellido" class="form-control form-control-sm mt-2" placeholder="Apellido">
+					<input name= "email" class="form-control form-control-sm mt-2" type="email" placeholder="Email">
+				</div>
+			</div>
+			<div>
+				<div class="input-group col-xs-12 col-md-3">
+					<input name = "password" type= "password" class="form-control form-control-sm mt-2" placeholder="Contraseña">
+					<input name ="fechnac" class="form-control form-control-sm mt-2" placeholder="dd-mm-yyyy">
+					<input name = "tel" class="form-control form-control-sm mt-2"  placeholder="Telefono">
+				</div>
+			</div>
+			<div>
+				<div class="input-group col-xs-12 col-md-3">
+					<input name="direccion" class="form-control form-control-sm mt-2" placeholder="Calle-número-barrio">
+					<input name="ciudad" class="form-control form-control-sm mt-2" placeholder="Ciudad">
+				</div>
+			</div>
+			<div>
+				<div class="input-group col-xs-12 col-md-3">
+					<input name="matricula" class="form-control form-control-sm mt-2"  placeholder="Matrícula (si posee)">
+				
+					<input name="provincia" class="form-control form-control-sm mt-2" placeholder="Provincia">
+				
+					<select name="select" class="form-select form-select-sm text-secondary mt-2" >
+						<option >seleccionar</option>
+						<option >Cliente</option>
+						<option>Profesional</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-center">
+				<div class="col-12 mt-2 d-flex justify-content-center">
+					<button type="submit" class= "btn btn-info text-white"onclick= "validarSelect()" onclick="validarRegistro();">Regístrate</button>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+		
+	
+
+	<!--Pie de Pagina -->
+
+	<footer class=" mt-5 w-100 d-flex aling-items-center justify-content-center flex-wrap">
+		<p class="fs-4 px-3 pt-3">Psico Finder. &copy; Todos los derechos Reservados 2022</p>
+		<div class="pt-3 aling-items-center" id="iconos">
+			<a href="#"><i class="bi bi-wordpress"></i></a>
+			<a href="#"><i class="bi bi-facebook"></i></a>
+			<a href="#"><i class="bi bi-twitter"></i></a>
+			<a href="#"><i class="bi bi-instagram"></i></a>
+		</div>
+
+
+	</footer>
+    <script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+	
+</html>
