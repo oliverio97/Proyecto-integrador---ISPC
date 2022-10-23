@@ -55,10 +55,10 @@
 				</li>
 			  </ul>
   
-			  <form class="d-flex" role="search" style="max-height: 200px">
-				<input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
-				<input class="form-control me-2" type="password" placeholder="Contraseña" aria-label="password">
-				<button class="btn btn-primary btn-primaryoutline-success" type="button">Iniciar sesión</button>
+			  <form name="formulario" class="d-flex" role="search" style="max-height: 200px" onsubmit="return validar();">
+				<input name="email" class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+				<input name="password" class="form-control me-2" type="password" placeholder="Contraseña" aria-label="password">
+				<button class="btn btn-primary btn-primaryoutline-success" type="submit" onclick="validar();">Iniciar sesión</button>
 			  </form>
 			</div>
 		  </div>
@@ -73,7 +73,7 @@
 		<!-- Nuevo Formulario -->
 
 		<div class="my-5 container">
-			<form class="form-group form-control">			
+			<form name = "formRegis" method= "post" class="form-group form-control" onsubmit="return validarRegistro();">			
 					<div class="row text-secondary">
 						<div class="col text-center">Psico Finder</div>
 					</div>
@@ -85,13 +85,13 @@
 							<label for="Nombre" class="align-self-center">Nombre</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="text" name="Nombre" id="Nombre" class="form-control form-control-md" placeholder="Ingrese su nombre">
+							<input type="text" name="nombre" id="Nombre" class="form-control form-control-md" placeholder="Ingrese su nombre">
 						</div>
 						<div class="col-md-2 my-1 d-flex">
 							<label for="Apellido" class="align-self-center">Apellido</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="text" name="Apellido" id="Apellido" class="form-control form-control-md" placeholder="Ingrese su apellido">
+							<input type="text" name="apellido" id="Apellido" class="form-control form-control-md" placeholder="Ingrese su apellido">
 						</div>	
 					</div>				
 					
@@ -101,13 +101,14 @@
 							<label for="DNI" class="align-self-center">DNI</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="number" name="DNI" id="DNI" class="form-control form-control-md" placeholder="Ingrese su número de documento">
+							<input name="DNI" id="DNI" class="form-control form-control-md" placeholder="Ingrese su número de documento">
 						</div>
 						<div class="col-md-2 my-1 d-flex">
 							<label for="Género" class="align-self-center">Género</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<select class="form-select form-select-md text-secondary" >
+							<select name="select" class="form-select form-select-md text-secondary" >
+								<option>seleccionar</option>
 								<option>Masculino</option>
 								<option>Femenino</option>
 								<option>Otro</option>
@@ -116,16 +117,16 @@
 					</div>
 					<div class="row">
 						<div class="col-md-2 my-1 d-flex">
-							<label for="Email" class="align-self-center">Email</label>				
+							<label for="email" class="align-self-center">Email</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="email" name="Email" id="Email" class="form-control form-control-md" placeholder="Ingrese su email">
+							<input type="email" name="email" id="Email" class="form-control form-control-md" placeholder="Ingrese su email">
 						</div>
 						<div class="col-md-2 my-1 d-flex">
-							<label for="Contraseña" class="align-self-center">Contraseña</label>				
+							<label for="contraseña" class="align-self-center">Contraseña</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="text" name="Contraseña" id="Contraseña" class="form-control form-control-md" placeholder="Ingrese su contraseña">
+							<input type="password" name="password" id="Contraseña" class="form-control form-control-md" placeholder="Ingrese su contraseña">
 						</div>						
 					</div>
 						
@@ -134,27 +135,27 @@
 							<label for="Provincia" class="align-self-center">Provincia</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="text" name="Provincia" id="Provincia" class="form-control form-control-md" placeholder="Ingrese su provincia">
+							<input type="text" name="provincia" id="Provincia" class="form-control form-control-md" placeholder="Ingrese su provincia">
 						</div>
 						<div class="col-md-2 my-1 d-flex">
 							<label for="Dirección" class="align-self-center">Ciudad</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="number" name="Ciudad" id="Ciudad" class="form-control form-control-md" placeholder="Ingrese su ciudad">
+							<input name="ciudad" id="Ciudad" class="form-control form-control-md" placeholder="Ingrese su ciudad">
 						</div>						
 					</div>
 					<div class="row">
 						<div class="col-md-2 my-1 d-flex">
-							<label for="Dirección" class="align-self-center">Dirección</label>				
+							<label for="dirección" class="align-self-center">Dirección</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="text" name="Dirección" id="Dirección" class="form-control form-control-md" placeholder="Ingrese su dirección">
+							<input type="text" name="direccion" id="Dirección" class="form-control form-control-md" placeholder="Ingrese su dirección">
 						</div>
                         <div class="col-md-2 my-1 d-flex">
-							<label for="Teléfono" class="align-self-center">Teléfono</label>				
+							<label for="teléfono" class="align-self-center">Teléfono</label>				
 						</div>
 						<div class="col-md-4 my-1">
-							<input type="text" name="Teléfono" id="Teléfono" class="form-control form-control-md" placeholder="Ingrese su número de teléfono">
+							<input type="text" name="tel" id="Teléfono" class="form-control form-control-md" placeholder="Ingrese su número de teléfono">
 						</div>	
 											
 					</div>										
@@ -163,78 +164,15 @@
 							<label for="Fecha de Nacimiento" class="align-self-center">Fecha de Nacimiento</label>					
 						</div>
 						<div class="col-md-3 my-1">
-							<input type="date" name="Fecha de Nacimiento" id="Fecha de Nacimiento" class="form-control form-control-md">
+							<input type="date" name="fechnac" id="Fecha de Nacimiento" class="form-control form-control-md">
 						</div>
 											
 					</div>	
 					<div class="col mt-4 mb-2 d-flex justify-content-center">
-						<button type="submit" class= "btn btn-info text-white">Regístrate</button>
+						<button type="submit" class= "btn btn-info text-white" onclick="validarRegistro();">Regístrate</button>
 					</div>			
 			  </form>
-		</div>
-
-<!-- Formulario Original 
-
-<div class= "my-5" id="formulario">
-			<form class="form-group form-control">
-				<div class="row text-secondary">
-					<div class="col text-center">Psico Finder</div>
-				<div class="row text-secondary">
-					<div class="col text-center fs-1 fw-bold">Formulario de Registro</div>
-				</div> 
-				
-				<div>
-					<div class="input-group col-xs-12 col-md-3">
-						<input class="form-control form-control-sm mt-2" type="number" placeholder="DNI">					
-						<input class="form-control form-control-sm mt-2" placeholder="Nombre">
-					</div>
-				</div>
-				
-				<div>
-					<div class="input-group col-xs-12 col-md-3">
-						<input class="form-control form-control-sm mt-2" placeholder="Apellido">
-						<input class="form-control form-control-sm mt-2" type="email" placeholder="Email">
-					</div>
-				</div>
-				<div>
-					<div class="input-group col-xs-12 col-md-3">
-						<input class="form-control form-control-sm mt-2" placeholder="Contraseña">
-						<input class="form-control form-control-sm mt-2" placeholder="Fecha de nacimiento">
-						<input class="form-control form-control-sm mt-2" type="number" placeholder="Telefono">
-					</div>
-				</div>
-				<div>
-					<div class="input-group col-xs-12 col-md-3">
-						<input class="form-control form-control-sm mt-2" placeholder="Dirección">
-						<input class="form-control form-control-sm mt-2" placeholder="Ciudad">
-					</div>
-				</div>
-				<div>
-					<div class="input-group col-xs-12 col-md-3">
-						<input class="form-control form-control-sm mt-2"  type="number" placeholder="Matrícula (si posee)">
-					
-						<input class="form-control form-control-sm mt-2" placeholder="Provincia">
-					
-						<select class="form-select form-select-sm text-secondary mt-2" >
-							<option>Cliente</option>
-							<option>Profesional</option>
-						</select>
-					</div>
-				</div>
-		
-				<div class="d-flex justify-content-center">
-					<div class="col-12 mt-2 d-flex justify-content-center">
-						<button type="submit" class= "btn btn-info text-white">Regístrate</button>
-					</div>
-				</div>
-				
-			</form>
-		</div>
-		
-	</section>
--->
-
-		
+		</div>		
 
 	<!--PIE DE PÁGINA -->
 
@@ -249,7 +187,7 @@
 
 
 	</footer>
-    
+    <script src="JS/script_cliente.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
