@@ -1,25 +1,6 @@
-function validar (){
-	var formulario = document.formulario;
-
-	if (formulario.email.value == 0){
-		alert('el campo email esta vacio');
-		formulario.email.value = "";
-		formulario.email.focus();
-		return false;
-	}
-
-	if (formulario.password.value == 0){
-		alert('el campo contraseña esta vacio');
-		formulario.password.value = "";
-		formulario.password.focus();
-		return false;
-	}
-}
-
 function validarRegistro(){
-	var formRegis = document.formRegis;
-	var indice = document.formRegis.select.selectedIndex;
-	var valor = document.formRegis.select.options[indice].value;
+	const formRegis = document.formRegis;
+	
 	
 	
 	if (formRegis.nombre.value == 0){
@@ -36,17 +17,17 @@ function validarRegistro(){
 		return false;
 	}
 
-    if (formRegis.DNI.value == 0){
+    if (formRegis.Dni.value == 0){
 		alert('el campo DNI esta vacio');
 		formulario.dni.value = "";
 		formulario.dni.focus();
 		return false;
 	}
 
-    if (valor == 'seleccionar'){
+    if (formRegis.genero.value == ''){
 		alert('el campo genero esta vacio');
-		formRegis.select.options[indice].value = "";
-		formRegis.select.options[indice].focus();
+		formRegis.genero.options[indice].focus();
+		return false;
 
 	}
 
@@ -78,10 +59,17 @@ function validarRegistro(){
 		return false;
 	}
 
-    if (formRegis.direccion.value == 0){
-		alert('el campo dirección esta vacio');
-		formRegis.direccion.value = "";
-		formRegis.direccion.focus();
+    if (formRegis.calle.value == 0){
+		alert('indica el nombre de tu calle');
+		formRegis.calle.value = "";
+		formRegis.calle.focus();
+		return false;
+	}
+	
+	if (formRegis.altura.value == 0){
+		alert('indica la altura de tu calle');
+		formRegis.altura.value = "";
+		formRegis.altura.focus();
 		return false;
 	}
 
@@ -99,4 +87,7 @@ function validarRegistro(){
 		return false;
 	}
 	
+	let mensaje = document.formRegis.exito;
+	mensaje.innerHTML="Se ha agregado un archivo satisfactoriamente";	
 }
+
