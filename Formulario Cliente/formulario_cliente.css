@@ -1,0 +1,52 @@
+.formulario__grupo-correcto .form-label{
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .form-label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .form-control:focus {
+	
+        border: 3px solid #bb2929;
+        outline: 3px;
+        box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+    
+}
+.formulario__grupo-incorrecto .form-select:focus {
+	
+    border: 3px solid #bb2929;
+    outline: 3px;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+    top: 11px;
+	font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__input-error{
+    font-size: 1em;
+    margin-bottom: 0;
+    display:none;
+    color:#bb2929;
+}
+.formulario__input-error-activo{
+    display: block;
+}
+
