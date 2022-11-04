@@ -12,10 +12,6 @@
 	color: #bb2929;
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
-}
 
 .formulario__grupo-incorrecto .form-control:focus {
 	
@@ -39,6 +35,25 @@
 	font-size: 16px;
     opacity: 0;
 }
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+.formulario__validacion-estado2 {
+	position: absolute;
+	right: 32px;
+    top: 11px;
+	font-size: 16px;
+    opacity: 0;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado2 {
+	color: #bb2929;
+	opacity: 1;
+}
+.formulario__grupo-correcto .formulario__validacion-estado2 {
+	color: #1ed12d;
+	opacity: 1;
+}
 
 .formulario__input-error{
     font-size: 1em;
@@ -49,4 +64,25 @@
 .formulario__input-error-activo{
     display: block;
 }
+
+.formulario__mensaje-error{
+    font-size: 1em;
+    margin-bottom: 0;
+    display:none;
+    color:#bb2929
+}
+.formulario__mensaje-error-activo{
+    display: block;
+}
+.formulario__mensaje-exito{
+    font-size: 1em;
+    margin-bottom: 0;
+    display:none;
+    color:#1ed12d;
+}
+
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+
 

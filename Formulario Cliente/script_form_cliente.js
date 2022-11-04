@@ -1,18 +1,14 @@
 
 
-
-
-
 const formulario = document.getElementById("formulario"); // esta variable accede al formulario
 const inputs = document.querySelectorAll("#formulario input") // esta variable accede a todos los inputs dentro de formulario, almacenándolos en una lista
 const select = document.querySelector("#formulario select")
-const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+const expresiones = {	
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	contraseña: /^(?=.*(a-z))^(?=.*(A-Z))^(?=.*[0-9])^(?=.{8,})$/, // 6 a 12 caracteres, incluyendo por lo menos 1 número y una mayúscula.
+	contraseña: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,16}$/, // 8 a 16 caracteres, incluyendo por lo menos 1 número,una mayúscula y una minúscula.
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+	telefono: /^\d{7,16}$/, // 7 a 14 numeros.   
 }
 // objeto con todos los inputs del formulario, estableciendolos por defecto en false, es decir que no me deja enviar
 // el formulario hasta que los complete (si quisiera que un campo no fuera obligatorio habría que ponerlo por defecto en true)
@@ -23,7 +19,7 @@ const campos = {
     contraseña: false,    
     email: false,    
     genero: false,
-    telefono: false
+    telefono: false,      
 }
 
 // función para ejecutarse al levantar la tecla o hacer click afuera del input. El parámetro x hace referencia
@@ -41,7 +37,9 @@ const validarFormulario = (x) => {
             break;
         case "contraseña":
             validarCampo(expresiones.contraseña,x.target,"contraseña")
-            validarContraseña2()    
+            if ((document.querySelector("#grupo__repetir_contraseña .form-control").value)==""){
+
+            }else{validarContraseña2()};            
             break;
         case "repetir contraseña":
             validarContraseña2()          
@@ -54,20 +52,21 @@ const validarFormulario = (x) => {
             break;
         case "genero":
             if ((document.querySelector("#grupo__genero .form-select").value)=="0"){
-                document.getElementById("grupo__genero").classList.add("formulario__grupo-incorrecto");
-                document.getElementById("grupo__genero").classList.remove("formulario__grupo-correcto");
+                document.getElementById("grupo__genero").classList.add("formulario__grupo-incorrecto")
+                document.getElementById("grupo__genero").classList.remove("formulario__grupo-correcto")
                 document.querySelector("#grupo__genero .formulario__input-error").classList.add('formulario__input-error-activo')
-                document.querySelector("#grupo__genero i").classList.add('fa-check-circle');
-                document.querySelector("#grupo__genero i").classList.remove('fa-times-circle')
-            } else {document.getElementById("grupo__genero").classList.remove("formulario__grupo-incorrecto");
-                    document.getElementById("grupo__genero").classList.add("formulario__grupo-correcto");
-                    document.querySelector("#grupo__genero .formulario__input-error").classList.remove('formulario__input-error-activo');
-                    document.querySelector("#grupo__genero i").classList.add('fa-check-circle');
-                    document.querySelector("#grupo__genero i").classList.remove('fa-times-circle')}
-            break
-
+                document.querySelector("#grupo__genero i").classList.add('fa-times-circle')
+                document.querySelector("#grupo__genero i").classList.remove('fa-check-circle')
+                campos["genero"] = false;
+            } else {document.getElementById("grupo__genero").classList.remove("formulario__grupo-incorrecto")
+                    document.getElementById("grupo__genero").classList.add("formulario__grupo-correcto")
+                    document.querySelector("#grupo__genero .formulario__input-error").classList.remove('formulario__input-error-activo')
+                    document.querySelector("#grupo__genero i").classList.add('fa-check-circle')
+                    document.querySelector("#grupo__genero i").classList.remove('fa-times-circle')
+                    campos["genero"] = true;
+            };                    
+            break;            
     }
-    
 }
 
 
@@ -115,7 +114,7 @@ const validarContraseña2 = () => {
 
 
 // Acá se accede a la variable select, que contiene al campo género del formulario.
-select.addEventListener("keyup",validarFormulario);
+select.addEventListener("change",validarFormulario);
 select.addEventListener("blur",validarFormulario);
 
 // Acá se accede a cada elemento de la variable inputs (o sea cada input del formulario) con forEach. 
@@ -136,8 +135,32 @@ inputs.forEach((input) =>{
 
 formulario.addEventListener("submit",function Enviar(evento){
     evento.preventDefault();
-    if(campos.nombre && campos.apellido && campos.email && campos.telefono && campos.contraseña){
+    if(campos.nombre && campos.apellido && campos.email && campos.telefono && campos.contraseña && campos.genero){
         formulario.reset();
-
+        document.getElementById("formulario__mensaje-exito").classList.add("formulario__mensaje-exito-activo")
+        document.getElementById("formulario__mensaje-error").classList.remove("formulario__mensaje-error-activo")
+        setTimeout(() => {
+            document.getElementById("formulario__mensaje-exito").classList.remove("formulario__mensaje-exito-activo")
+        },5000);
+        document.querySelectorAll(".formulario__grupo-correcto").forEach((icono) => {
+            icono.classList.remove("formulario__grupo-correcto")
+        });        
+        campos.nombre=false;
+        campos.apellido=false;
+        campos.contraseña=false;
+        campos.email=false;
+        campos.telefono=false;
+        campos.genero=false
+                
+    } else {
+        document.getElementById("formulario__mensaje-error").classList.add("formulario__mensaje-error-activo")
+        document.getElementById("formulario__mensaje-exito").classList.remove("formulario__mensaje-exito-activo")
+        document.querySelectorAll(".col-lg-4").forEach((grupo) => {
+            if (grupo.classList.contains("formulario__grupo-correcto")){
+            
+            }else {grupo.classList.add("formulario__grupo-incorrecto")   
+        }});
+        document.getElementById("grupo__fecha_de_nacimiento").classList.remove("formulario__grupo-incorrecto")
+        
     }
 });

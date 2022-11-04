@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">   
     <title>JS</title>
-    <LINK rel=StyleSheet href="formulario_cliente.css" type="text/css">
+    <LINK rel=StyleSheet href="estilo_form_cliente.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
@@ -48,7 +48,7 @@
               <input class="form-control" name="contraseña" placeholder="Ingrese su contraseña" type="password">
               <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
-            <p class="formulario__input-error">La contraseña debe ser entre 6 y 12 caracteres, con al menos 1 mayúscula y un número</p>
+            <p class="formulario__input-error">La contraseña debe tener entre 8 y 16 caracteres, con al menos 1 mayúscula, 1 minúscula y un número</p>
           </div>  
 
 <!-- Campo Repetir Contraseña --> 
@@ -76,8 +76,8 @@
 <!-- Campo Fecha de Nacimiento -->
 
           <div class="col-lg-4 col-md-6 my-1" id="grupo__fecha_de_nacimiento">
-            <label for="fecha de nacimiento" class="form-label">Fecha de Nacimiento</label>
-            <input class="form-control"  name="fecha de nacimiento" type="date" required>
+            <label for="fecha_de_nacimiento" class="form-label">Fecha de Nacimiento</label>            
+              <input class="form-control" name="fecha_de_nacimiento" type="date" required>               
           </div>
 
 <!-- Campo Teléfono -->
@@ -85,7 +85,7 @@
           <div class="col-lg-4 col-md-6 my-1" id="grupo__telefono">
             <label for="telefono" class="form-label">Teléfono</label>            
             <div class="formulario__grupo-input position-relative">
-              <input class="form-control"  name="telefono" type="text">
+              <input class="form-control"  placeholder="Ingrese su número de teléfono" name="telefono" type="text">
               <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">El teléfono solo puede contener números y el maximo son 14 dígitos.</p>
@@ -97,22 +97,29 @@
             <label for="genero" class="form-label">Género</label>
             <div class="formulario__grupo-input position-relative">
               <select class="form-select"  id="genero" name="genero">
-                  <option value="0"> </option>
+                  <option value="0">Seleccione una opción</option>
                   <option value="1">Masculino</option>
                   <option value="2">Femenino</option>
                   <option Value="3">Otro</option>            
               </select>
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+              <i class="formulario__validacion-estado2 fas fa-times-circle"></i>
             </div>
           <p class="formulario__input-error">Debe seleccionar un tipo.</p>
           </div>
 
-<!-- Botón Enviar -->
+<!-- Botón Enviar y Mensajes -->
 
-          <div class="col-12 mt-4 mb-2 d-flex justify-content-center">
-            <button class="form-control btn-primary w-50" type="submit">Enviar</button>
+          <div class="col-12 mt-4 mb-3 d-flex justify-content-center">
+            <button class="form-control btn-primary" style="max-width: 150px" type="submit">Enviar</button>
           </div>
-
+          <div class="col-12 d-flex justify-content-center">
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+            <div class="formulario__mensaje-error" id="formulario__mensaje-error">
+              <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor asegúrate de rellenar todos los campos marcados 
+                como obligatorios</p>
+            </div>
+          </div>
+            
         </div>
       </form>
     </div>
