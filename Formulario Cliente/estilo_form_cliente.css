@@ -8,6 +8,14 @@
 	opacity: 1;
 }
 
+.formulario__grupo-correcto .form-control:focus {
+	
+    border: 3px solid #1ed12d;
+    outline: 3px;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+
+}
+
 .formulario__grupo-incorrecto .form-label {
 	color: #bb2929;
 }
