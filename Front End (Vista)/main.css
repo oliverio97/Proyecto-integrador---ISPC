@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;    
 }
 
 
@@ -62,6 +62,7 @@ body {
 footer {
     background: #1b2a4e;
     height: auto;
+    position: absolute
 
 }
 
