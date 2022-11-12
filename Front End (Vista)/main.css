@@ -4,7 +4,6 @@ body {
     font-family: 'Montserrat', sans-serif !important;    
 }
 
-
 #menu {
     background-color: #A7F5EB !important;
 
@@ -61,8 +60,7 @@ body {
 
 footer {
     background: #1b2a4e;
-    height: auto;
-    position: absolute
+    height: auto;   
 
 }
 
