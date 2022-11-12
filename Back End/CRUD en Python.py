@@ -17,12 +17,26 @@ class Conexion():
 
 #Función Inserción Simple
 
-    def InsertarRegistro(self,tipo):
+    def InsertarRegistroGenero(self,tipo):
         if self.conexion.is_connected():
             try:
                 cursor = self.conexion.cursor()
                 sentenciaSQL= "INSERT INTO genero (tipo) VALUES(%s)"
                 datos= ([tipo])
+
+                cursor.execute(sentenciaSQL,datos)
+                self.conexion.commit()
+                self.conexion.close()
+
+            except Exception as descripcionError:
+                print("Error en la inserción simple de datos:",descripcionError)
+
+    def InsertarRegistroUbicacion(self,ciudad,provincia):
+        if self.conexion.is_connected():
+            try:
+                cursor = self.conexion.cursor()
+                sentenciaSQL= "INSERT INTO ubicacion (ciudad,provincia) VALUES(%s,%s)"
+                datos= ([ciudad,provincia])
 
                 cursor.execute(sentenciaSQL,datos)
                 self.conexion.commit()
@@ -109,27 +123,28 @@ conexion1 = Conexion()
 
 #Consulta Inserción Simple
 
-conexion1.InsertarRegistro("Femenino",30)
+conexion1.InsertarRegistroGenero("Masculino")
+conexion1.InsertarRegistroUbicacion("Córdoba", "Córdoba")
 
 #Consulta Inserción Múltiple
 
-data=[(411111,"Julian","Meneses","asdas","1997-06-19","asdas333","asdas",1,1),
-(40333,"Julian","Meneses","asdas","1997-06-19","asdassdsd3","asdas222",1,1)]
+data=[(40518042,"Julian","Meneses","1234","1997-06-19","julian.meneses11@gmail.com","Fitz Roy 2184",1,1),
+(40000001,"Juliana","Meneses","1234","1997-06-19","juliana@gmail.com","Jose eche 2000",1,1)]
 conexion1.InsertarMultiplesRegistros(data)
 
-#Consulta Select
+# #Consulta Select
 
 print(conexion1.BuscarRegistros("Julian"))
 
-#Consulta Select con JOIN
+# #Consulta Select con JOIN
 
 print(conexion1.BuscarRegistrosJOIN("masculino"))
 
-#Consulta Update
+# #Consulta Update
 
 conexion1.ActualizarRegistros("Alvaro","Julian")
 
-#Consulta Delete
+# #Consulta Delete
 
 conexion1.EliminarRegistros("Alvaro")
 
