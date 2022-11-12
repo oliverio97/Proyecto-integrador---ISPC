@@ -24,7 +24,6 @@ body {
     max-height: 10rem;
 }
 
-/* ======= prueba CSS con lo de maxi*/
 
 .contenedor {
     background: rgb(226, 245, 244);
@@ -86,7 +85,7 @@ footer p {
     justify-content: center;
 }
 
-/* Estilos Formularios */
+/* Estilos Formulario Profesional */
 
 .formulario__grupo-correcto .form-label{
 	color: #1ed12d;
