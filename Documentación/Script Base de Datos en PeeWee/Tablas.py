@@ -14,10 +14,12 @@ class Ubicación(Model):
         database = db
 
 class Libros(Model):
-    Costo = IntegerField
+    Precio = IntegerField
     Nombre = CharField(45)
     Autor = CharField(80)
     Páginas = IntegerField 
+    Editorial = CharField(40)
+    Sinopsis = CharField(255)
     Fecha_inserción= DateTimeField (default=datetime.datetime.now())
     Fecha_actualización = DateTimeField()
     Estado = CharField (default="A") 
@@ -35,7 +37,9 @@ class Género(Model):
         database = db
 
 class Cursos(Model):
-    Costo = IntegerField
+    Precio = IntegerField
+    Autor = CharField(30)
+    Descripcion = CharField(255)
     Fecha_inicio = DateField()
     Fecha_finalización = DateField()
     Fecha_inserción= DateTimeField (default=datetime.datetime.now()) 
@@ -179,7 +183,7 @@ class Psicólogos_obrasocial(Model):
 class Clientes_psicólogos(Model):    
     Fecha_inserción= DateTimeField (default=datetime.datetime.now()) 
     Fecha_actualización = DateTimeField()
-    Honorarios = IntegerField ()
+    Valoracion = CharField(200)
     Estado = CharField (default="A")
     Psicólogos_dni = ForeignKeyField(Psicólogos,backref="Psicólogos_dni")
     Clientes_dni= ForeignKeyField(Clientes,backref="Clientes_dni")
@@ -187,6 +191,16 @@ class Clientes_psicólogos(Model):
     class Meta:
         database = db
 
+class Administradores(Model):    
+    DNI = IntegerField (primary_key=True, unique=True)
+    Contraseña_hash= CharField(100)    
+    Email = CharField(100,unique=True)
+    Fecha_inserción= DateTimeField (default=datetime.datetime.now()) 
+    Fecha_actualización = DateTimeField()   
+    Estado = CharField (default="A")   
+
+    class Meta:
+        database = db
 
 db.connect() #conexión a la base de datos
 
