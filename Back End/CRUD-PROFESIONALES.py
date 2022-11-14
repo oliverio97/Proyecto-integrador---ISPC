@@ -20,8 +20,8 @@ import mysql.connector
 
 conexion1=mysql.connector.connect(host="localhost", 
                                   user="root", 
-                                  port= 3307,
-                                  passwd="1234", 
+                                  port= 3306,
+                                  passwd="123654", 
                                   database="profesionales")
 cursor1=conexion1.cursor()
 cursor1.execute("select id, Nombre, Apellido from psicologos")
@@ -35,16 +35,16 @@ import mysql.connector
 
 conexion1=mysql.connector.connect(host="localhost", 
                                   user="root",
-                                  port=3307, 
-                                  password="1234", 
+                                  port=3306, 
+                                  password="123654", 
                                   database="profesionales")
 
 #CREAR PSICOLOGO
 
 conexion1=mysql.connector.connect(host="localhost", 
                                   user="root", 
-                                  passwd="1234",
-                                  port= 3307, 
+                                  passwd="123654",
+                                  port= 3306, 
                                   database="profesionales")
 cursor1=conexion1.cursor()
 sql="insert into psicologos(Nombre, Apellido) values (%s,%s)"
@@ -59,7 +59,8 @@ import mysql.connector
 
 conexion1=mysql.connector.connect(host="localhost", 
                                   user="root",
-                                  password="1234", 
+                                  password="123654",
+                                  port= 3306,  
                                   database="profesionales")
 cursor1=conexion1.cursor()
 cursor1.execute("delete from psicologos where id=2")
