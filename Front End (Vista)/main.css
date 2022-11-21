@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;    
+}
+
+#menu {
+    background-color: #A7F5EB !important;
+
+} 
+
+#menu li > a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carrousel-inner {
+    max-height: 10rem;
+}
+
+
+.contenedor {
+    background: rgb(226, 245, 244);
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.contenedor_box {
+    margin-left: 12em;
+    margin-right: 12em;
+}
+
+.box2 {
+    float: left;
+    padding: 10px;
+    color: rgb(6, 103, 129);
+    width: 270px;
+    height: 300px;
+    margin: 20px;
+    background: rgb(202, 236, 236);
+}
+
+
+.img_curso {
+    width: 2em;
+    height: 2em;
+}
+
+.imagen-psicologo {
+    height: 15rem !important;
+}
+
+footer {
+    background: #1b2a4e;
+    height: auto;   
+
+}
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 20px;
+    color: #f3f3f3;
+}
+#buscadores {
+    border-radius: 5%;
+    border: solid 1px black;
+    background-color: #f3f3f3;
+}
+
+.card-img-top {
+    width: 15rem;
+    height: 18rem;
+    justify-content: center;
+}
+
+/* Estilos Formulario Profesional */
+
+.formulario__grupo-correcto .form-label{
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-correcto .form-control:focus {
+	
+    border: 3px solid #1ed12d;
+    outline: 3px;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+
+}
+
+.formulario__grupo-incorrecto .form-label {
+	color: #bb2929;
+}
+
+
+.formulario__grupo-incorrecto .form-control:focus {
+	
+        border: 3px solid #bb2929;
+        outline: 3px;
+        box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+    
+}
+.formulario__grupo-incorrecto .form-select:focus {
+	
+    border: 3px solid #bb2929;
+    outline: 3px;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+    top: 11px;
+	font-size: 16px;
+    opacity: 0;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+.formulario__validacion-estado2 {
+	position: absolute;
+	right: 32px;
+    top: 11px;
+	font-size: 16px;
+    opacity: 0;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado2 {
+	color: #bb2929;
+	opacity: 1;
+}
+.formulario__grupo-correcto .formulario__validacion-estado2 {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__input-error{
+    font-size: 1em;
+    margin-bottom: 0;
+    display:none;
+    color:#bb2929;
+}
+.formulario__input-error-activo{
+    display: block;
+}
+
+.formulario__mensaje-error{
+    font-size: 1em;
+    margin-bottom: 0;
+    display:none;
+    color:#bb2929
+}
+.formulario__mensaje-error-activo{
+    display: block;
+}
+.formulario__mensaje-exito{
+    font-size: 1em;
+    margin-bottom: 0;
+    display:none;
+    color:#1ed12d;
+}
+
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+
+
+/* ======= media queries pantalla SM */
+
+
+@media (max-width:768px) {
+    #buscadores {
+        width: 90% !important;
+
+    }
+}
+
+@media (max-width:768px) {
+    #intro {
+        width: 90% !important;
+
+    }
+}
+
+
+
+
+
+
+
+
